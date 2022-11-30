@@ -7,6 +7,8 @@ body {
 .container1 {
   background-color: black;
   padding: 3em;
+  display: flex;
+  
 }
 
 .container1 :nth-child(1) {
