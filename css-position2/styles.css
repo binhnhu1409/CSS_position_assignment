@@ -4,27 +4,39 @@ body {
   background-color: white;
 }
 
+.container0 {
+  position: relative;
+}
+
 .container1 {
   background-color: black;
   padding: 3em;
   display: flex;
-  
+  flex-direction: column;
+  align-items: center;
 }
 
-.container1 :nth-child(1) {
+.container1 div:nth-child(1) {
   background-color: rgb(136, 246, 111);
 }
 
-.container1 :nth-child(2) {
+.container1 div:nth-child(2) {
   background-color: rgb(86, 213, 60);
+  
 }
 
-.container1 :nth-child(3) {
+.container1 div:nth-child(3) {
   background-color: rgb(42, 144, 22);
 }
 
 .container2 {
   background-image: url("avatar.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
   height: 10em;
   width: 10em;
+  position: absolute;
+  top: -35%;
+  left: 50%;
+  transform: translateX(-50%);
 }
