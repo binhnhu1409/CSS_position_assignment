@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 10em;
+  background-color: white;
+}
+
+.container1 {
+  background-color: black;
+  padding: 3em;
+}
+
+.container1 :nth-child(1) {
+  background-color: rgb(154, 244, 134);
+}
+
+.container1 :nth-child(2) {
+  background-color: rgb(86, 213, 60);
+}
+
+.container1 :nth-child(3) {
+  background-color: rgb(42, 144, 22);
+}
+
+.container2 {
+  background-image: url("avatar.png");
+  height: 10em;
+  width: 10em;
+}
