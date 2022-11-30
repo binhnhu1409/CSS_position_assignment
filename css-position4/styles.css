@@ -1,3 +1,70 @@
 body {
   background: white;
 }
+
+/* Create grid layout as example */
+.grid {
+  display: grid;
+  grid-template-areas: 
+  "g1 g3 g3 g4 g5"
+  "g2 g3 g3 g4 g5"
+  ;
+  grid-gap: 1em;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  position: relative;
+}
+
+.grid div.item:nth-child(1) {
+  background-color: rgb(178, 14, 178);
+  grid-area: g1;
+}
+
+.grid div.item:nth-child(2) {
+  background-color: rgb(141, 20, 20);
+  grid-area: g2;
+}
+
+.grid div.item:nth-child(3) {
+  background-color: rgb(3, 169, 30);
+  grid-area: g3;
+}
+
+.grid div.item:nth-child(4) {
+  background-color: rgba(33, 196, 214, 0.867);
+  grid-area: g4;
+}
+
+.grid div.item:nth-child(5) {
+  background-color: rgb(220, 102, 205);
+  grid-area: g5;
+}
+
+/* Create the diamond shape and center the number */
+.diamond {
+  background-color: white;
+  width: 1.5em;
+  transform: rotate(-45deg);
+  position: absolute;
+  margin: 0 auto;
+}
+
+p {
+  transform: rotate(45deg);
+  font-weight: bold;
+  text-align: center;
+  display: table-cell;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+}
+
+/* Made unnecessary letters invisible */
+.tooltip {
+  color: transparent;
+}
